@@ -1,0 +1,103 @@
+/* Main form container */
+.sign-in-form {
+  background-color: #0d0f1a;
+  color: #ffffff;
+  padding: 40px;
+  max-width: 400px;
+  margin: 60px auto;
+  font-family: sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Heading */
+.sign-in-form h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #3b82f6;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Labels */
+.sign-in-form label {
+  font-size: 14px;
+  color: #cbd5e1;
+  margin-bottom: 6px;
+}
+
+/*Passowrd area */
+
+.password-area {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 5px;
+  top: 25%;
+  cursor: pointer;
+}
+
+/* Input fields */
+.sign-in-form input[type="email"],
+.sign-in-form input[type="password"],
+.sign-in-form input[type="text"] {
+  padding: 12px 16px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #e2e8f0;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sign-in-form input::placeholder {
+  color: #94a3b8;
+}
+
+/* Input focus */
+.sign-in-form input:focus {
+  outline: none;
+
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+  background-color: #273449;
+}
+
+/* Submit button */
+.sign-in-form button[type="submit"] {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.sign-in-form button[type="submit"]:hover {
+  background-color: #2563eb;
+}
+
+/* Error message */
+.sign-in-form .error-message {
+  color: #f87171;
+  font-size: 14px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+
+/* Small text or links */
+.sign-in-form .small-text {
+  font-size: 14px;
+  color: #94a3b8;
+  text-align: center;
+  margin-top: 12px;
+}
