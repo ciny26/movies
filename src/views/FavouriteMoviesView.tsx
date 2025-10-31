@@ -1,4 +1,3 @@
-import React from "react";
 import { MovieCard } from "../components/MovieCard";
 import { useNavigate } from "react-router-dom";
 import type { Movie } from "../types";

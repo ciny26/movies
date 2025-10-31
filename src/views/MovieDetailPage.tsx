@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import getGenre from "../utilities";
+import { useEffect, useState } from "react";
 import "../Styles/movieDetailPage.css"; // ⬅️ Don’t forget this
 import { useParams } from "react-router-dom";
 import type { Movie } from "../types";
@@ -19,7 +18,7 @@ export const MovieDetailPage = ({
   const [movie, setMovie] = useState<Movie>();
 
   //handle toggle movie from favourites
-  //getting the list of favs from app.tsx than add the movie in it or delete it 
+  //getting the list of favs from app.tsx than add the movie in it or delete it
   const handleToggleFavorites = (movie: Movie) => {
     if (favList.some((m: Movie) => m.id === movie.id)) {
       sendDataToParent(favList.filter((m) => m.id !== movie.id));

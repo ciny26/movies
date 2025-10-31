@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import getGenre from "../utilities";
 import "../Styles/movieCard.css";
 import type { Genre, Movie } from "../types";

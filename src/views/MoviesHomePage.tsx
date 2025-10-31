@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { MovieCard } from "../components/MovieCard";
 import "../Styles/moviesView.css";
 import { useNavigate } from "react-router-dom";
